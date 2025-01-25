@@ -1,0 +1,25 @@
+<div class="parent">
+    <!-- <img src="https://media.istockphoto.com/id/2174913764/photo/deer-family-silhouette-banner-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=TDmdkjBHTZB4TLrLpCVxhCWpjLIHG9EgJEQy6UuCrr8=" alt=""> -->
+    <aside>
+        <h1>Employee Database Management System</h1>
+    </aside>
+    <main>
+        <form action="" [formGroup]="loginform">
+            <h1>Login</h1>
+            <div class="input">
+                <input type="email"  placeholder="Email address or Phone Number" formControlName="email" >
+                <i class="bi bi-envelope-fill"></i>
+            </div><br>
+            <div class="input">
+                <input type="password" placeholder="Password" formControlName="password"> 
+                <i class="bi bi-lock-fill"></i>
+
+            </div><br>
+         <button class="btn btn-primary" (click)="login()">Login</button>
+         
+        </form>
+    </main>
+</div>
+
+
+
