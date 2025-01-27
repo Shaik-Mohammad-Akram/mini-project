@@ -21,7 +21,7 @@ login(){
       console.log(data);
       alert('Login Succesful');
       sessionStorage.setItem('token',data.token);
-      // this._router.navigateByUrl('/dashboard');
+      this._router.navigateByUrl('/dashboard');
     },(err:any)=>{
       alert('Invalid Ceredentials')
     }

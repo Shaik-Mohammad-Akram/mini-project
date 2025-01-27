@@ -7,12 +7,18 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    HomeComponent,
+    EmployeesComponent,
+    CreateEmployeeComponent
   ],
   imports: [
     BrowserModule,

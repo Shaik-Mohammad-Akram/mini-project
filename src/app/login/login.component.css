@@ -15,6 +15,7 @@ input{
     opacity: 0.5;
     border: none;
     outline: none;
+    color: white;
     
     background-color: rgb(59, 59, 224);
 
@@ -44,7 +45,7 @@ input::placeholder {
     display: flex;
     background-image: url('https://i.ytimg.com/vi/rWAl24DUDus/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AHUBoAC4AOKAgwIABABGBwgEyh_MA8=&rs=AOn4CLB9QxYCpQ7JEPBIyCTGH8hZZ8udMQ');
     background-repeat: no-repeat;
-    background-size: 1280px 600px; 
+    background-size: 1280px 555px; 
 }
 aside{
     width: 50%;

@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+}
+/* .parent{
+    width: 100vw;
+    height: 100vh;
+} */
+header{
+    height: 10%;
+    width: 100%;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000; */
+    color: #fff;
+    background-color: rgb(13, 54, 57);
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+.offcanvas{
+    background-color: rgb(24, 24, 24);
+    color: cyan;
+}
+.btn-close{
+  background-color: cyan;
+}
+.btn{
+    background-color: rgb(13, 54, 57);
+    color: #fff;
+    border: rgb(13, 54, 57);
+    /* padding-bottom: 10px; */
+}
+main{
+    /* width: 100%; */
+    height: 505px;
+    background-color:black;
+    display: flex;
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLWx1a2VzdGFja3Bvb2xlMi13YXZlcy1hdXN0cmFsaWEtam9iNTcwLTEuanBn.jpg' );
+    background-repeat: no-repeat;
+    background-size: 1266px 500px; 
+    overflow: auto;
+    
+}
+/* .left{
+    width: 20%;
+   
+    background-color: blue;
+}
+.right{
+    width: 80%;
+    background-color: blueviolet;
+} */
+.menu{
+    display: flex;
+    padding-top:10px;
+    padding-left: 30px;
+}
+h3{
+    padding-left: 15px;
+    padding-top: 7px;
+}
+#list{
+    font-size: x-large;
+    font-weight: 900;
+}
+.bi{
+    font-size: x-large;
+    font-weight: 900;
+}
+.search{
+    width: 400px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
