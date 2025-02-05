@@ -56,4 +56,16 @@ sort(){
     }
   )
 }
+limit:number=0;
+page:number=0;
+pagination(){
+  this._employeesservice.getpaginatedemployees(this.limit,this.page).subscribe(
+    (data:any)=>{
+      this.employees=data;
+      console.log(this.employees);
+    },(err:any)=>{
+      alert('internal server error')
+    }
+  )
+}
 }

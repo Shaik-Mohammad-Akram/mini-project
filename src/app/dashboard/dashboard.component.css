@@ -1,6 +1,9 @@
 *{
     margin: 0%;
 }
+/* body{
+    margin: 0%;
+} */
 /* .parent{
     width: 100vw;
     height: 100vh;
@@ -60,7 +63,7 @@ main{
 }
 h3{
     padding-left: 15px;
-    padding-top: 7px;
+    padding-top: 15px;
 }
 #list{
     font-size: x-large;
@@ -75,5 +78,27 @@ h3{
     /* background-color: black; */
     display: flex;
     justify-content: space-evenly;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
+.dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+h6{
+    margin-top:24px;
+}
+#log{
+    background-color: red;
+    border: 0;
+    width: 100px;
+    margin-left: 30px;
+}
+a{
+    margin-left: 35px;
+}
+

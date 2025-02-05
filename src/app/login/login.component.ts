@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from '../login.service';
 
@@ -10,8 +10,8 @@ import { LoginService } from '../login.service';
 })
 export class LoginComponent {
   public loginform:FormGroup=new FormGroup({
-    email:new FormControl(" "),
-    password:new FormControl(''),
+    email:new FormControl("",[Validators.required, Validators.email]),
+    password:new FormControl('',[Validators.required]),
   });
 constructor(private _loginservice:LoginService, private _router:Router){}
 login(){
@@ -19,11 +19,11 @@ login(){
   this._loginservice.login(this.loginform.value).subscribe(
     (data:any)=>{
       console.log(data);
-      alert('Login Succesful');
+      alert('Login Successful');
       sessionStorage.setItem('token',data.token);
       this._router.navigateByUrl('/dashboard');
     },(err:any)=>{
-      alert('Invalid Ceredentials')
+      alert('Invalid Credentials')
     }
   )
 }

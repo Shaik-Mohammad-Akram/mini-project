@@ -1,8 +1,18 @@
 #table{
     width: 100%;
+
+}input{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+select{
+    border: 1px solid white;
+    border-radius: 10px;
 }
 .operations{
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 120px;
     background-color: rgb(228, 227, 227);
     width: 1000px;
     height: 60px;

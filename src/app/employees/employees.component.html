@@ -16,7 +16,7 @@
     </select>
     <button class="btn btn-primary" (click)="sort()">Sort</button>
     
-    <!-- <select  [(ngModel)]="limit">
+    <select  [(ngModel)]="limit">
         <option>10</option>
         <option >20</option>
         <option >30</option>
@@ -24,18 +24,18 @@
         <option >50</option>
         <option >60</option>
         
-    </select> -->
-    <!-- <select  [(ngModel)]="page">
+    </select>
+    <select  [(ngModel)]="page">
         <option >1</option>
         <option >2</option>
         <option >3</option>
         <option >4</option>
         <option >5</option>
         <option >6</option>
-    </select> -->
-    <!-- <button class="btn btn-primary" (click)="pagination()">pagination</button> &nbsp; -->
-    <!-- <button class="btn btn btn-primary" routerLink="/dashboard/create-studentid">New StudentID</button> -->
-</div>
+    </select>
+    <button class="btn btn-primary" (click)="pagination()">pagination</button> &nbsp;
+    <button class="btn btn btn-primary" routerLink="/dashboard/create-employee">New Employee Data</button>
+</div><br>
 <table class="table table-dark table-striped table-hover table-bordered" id="table">
     <thead>
         <tr>
@@ -66,7 +66,7 @@
             <td>{{employee.type}}</td>
             <td><div *ngFor="let hike of employee.hikes">{{hike.year}},{{hike.percentage}}%</div></td>
             <td>{{employee.billAmount}}</td>
-            <td><button class="btn btn-info"><i class="bi bi-eye-fill"></i></button></td>
+            <td><button class="btn btn-info" routerLink="/dashboard/employee-details/{{employee.id}}"><i class="bi bi-eye-fill"></i></button></td>
             <td><button class="btn btn-danger" (click)="delete(employee.id)"><i class="bi bi-trash3-fill"></i></button></td>
             <!-- <td>{{employee.name}}</td>
             <td>{{employee.name}}</td> -->

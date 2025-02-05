@@ -10,6 +10,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CreateEmployeeComponent } from './create-employee/create-employee.compo
     DashboardComponent,
     HomeComponent,
     EmployeesComponent,
-    CreateEmployeeComponent
+    CreateEmployeeComponent,
+    EmployeeDetailsComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

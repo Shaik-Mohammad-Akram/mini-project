@@ -1,1 +1,59 @@
-<p>create-employee works!</p>
+<form action="" [formGroup]="employeeForm">
+    <h1>Create Employee Data</h1>
+    <input type="text" formControlName="name" placeholder="Enter Your Name"><br>
+   
+ 
+        <label  id="gender">Gender:</label> &nbsp;
+        <label >Male</label><input type="radio" name="type" formControlName="gender" class="dot"> 
+        <label>Female</label> <input type="radio" name="type" formControlName="gender" class="dot">
+  
+  
+    <input type="text" formControlName="company" placeholder="Enter Your company"><br>
+    <input type="text" formControlName="role" placeholder="Enter Your role"><br>
+    <input type="number" formControlName="package" placeholder="Enter Your package"><br>
+    <input type="email" formControlName="email" placeholder="Enter Your email"><br>
+
+   
+    <input type="date" formControlName="dob" placeholder="Enter Your DOB" ><br>
+    <div formGroupName="address">
+      
+        <input type="text"  formControlName="addressline" placeholder="Enter Your Addressline"> <br>
+       
+        <input type="text" formControlName="city" placeholder="Enter Your City"> <br>
+
+     
+        <input type="text"  formControlName="state" placeholder="Enter Your State" > <br>
+
+       
+        <input type="number"  formControlName="pincode"placeholder="Enter Your Pincode"> <br>
+    </div>
+    <button class="btn btn-info" (click)="hikes()">Add Hikes</button>
+    <div formArrayName="cards">
+        <div  *ngFor="let card of cardFormArray.controls; let i=index" >
+            <div formGroupName="{{i}}">
+                <h5>Enter Your Hikes</h5>
+              
+            
+                <input type="number" formControlName="year" placeholder="Enter the Year"><br>
+              
+                <input type="number" formControlName="percentage" placeholder="Enter the Percentage"><br><br>
+                <button class="btn btn-danger" (click)="delete(i)">Delete Card</button>
+            </div>
+
+        </div>
+    </div>
+    <label for="" class="wfh">Workmode:</label>
+    <input type="radio" name="types" formControlName="Workmode" value="remote" class="dot">
+    <label for="">Remote</label>
+    <input type="radio" name="types" formControlName="Workmode" value="office" class="dot">
+    <label for="">Office</label><br>
+    <div *ngIf="employeeForm.get('Workmode')?.value=='remote'">
+      
+        <input type="number" formControlName="Wifi-Bill" placeholder="Wifi-bill"><br>
+    </div>
+    <div *ngIf="employeeForm.get('Workmode')?.value=='office'">
+       
+        <input type="number" formControlName="Transport-Fee" placeholder="Transport-bill"><br>
+    </div><br>
+    <button (click)="submit()" >Submit</button>
+</form>
