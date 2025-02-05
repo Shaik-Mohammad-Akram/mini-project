@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+} 
+body{
+    margin: 0%;
+}
+.parent{
+    /* width: 100vw;
+    height: 100vh; */
+    width: 1263px ;
+    height:500px ;
+
+    background-color: whitesmoke;
+    display: flex;
+}
+.left{
+    width: 50%;
+    background-color: whitesmoke;
+    margin-top: 150px;
+    margin-left: 15px;
+    padding-left: 100px;
+
+}
+h2{
+    text-shadow: 0 0 20px cyan;
+}
+.right{
+    width: 50%;
+    background-color: whitesmoke;
+    margin-top: 90px;
+    margin-left: 15px;
+}
+img{
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+   
+}

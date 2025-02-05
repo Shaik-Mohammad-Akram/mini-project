@@ -1,0 +1,16 @@
+h3{
+    color: crimson;
+    font-size: larger;
+}
+label{
+    color: black;
+}
+.info{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    margin-left: 400px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
